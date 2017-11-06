@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "OP-ClockProfile-Metamodel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"osVersion",
+		"posixCompliant",
+		"base_Class"
+	],
+	"name" : "ClClock",
+	"type" : "normal"
+}

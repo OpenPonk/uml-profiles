@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "OP-UML-Profiles",
+	"classinstvars" : [
+		"profile",
+		"metaClassMap"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OPUmlCustomProfile",
+	"type" : "normal"
+}

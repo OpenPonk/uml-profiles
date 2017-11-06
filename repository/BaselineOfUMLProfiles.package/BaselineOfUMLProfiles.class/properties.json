@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "PeterUhnak 11/6/2017 15:49",
+	"super" : "Object",
+	"category" : "BaselineOfUMLProfiles",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BaselineOfUMLProfiles",
+	"type" : "normal"
+}

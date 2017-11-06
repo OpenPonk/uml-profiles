@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OPUmlCustomProfile",
+	"category" : "OP-IssuesProfile-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "IPIssuesProfileFactory",
+	"type" : "normal"
+}

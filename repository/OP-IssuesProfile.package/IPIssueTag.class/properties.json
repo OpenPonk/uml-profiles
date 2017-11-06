@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "OP-IssuesProfile-Metamodel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"base_Element",
+		"reviewed"
+	],
+	"name" : "IPIssueTag",
+	"type" : "normal"
+}

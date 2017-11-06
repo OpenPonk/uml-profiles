@@ -1,0 +1,3 @@
+actions
+createProfile
+	^ self subclassResponsibility

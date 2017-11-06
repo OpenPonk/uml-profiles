@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OPUmlCustomProfile",
+	"category" : "OP-ClockProfile-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClClockProfileFactory",
+	"type" : "normal"
+}

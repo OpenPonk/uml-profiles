@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "PeterUhnak 11/6/2017 15:49",
-	"super" : "Object",
+	"super" : "BaselineOf",
 	"category" : "BaselineOfUMLProfiles",
 	"classinstvars" : [ ],
 	"pools" : [ ],

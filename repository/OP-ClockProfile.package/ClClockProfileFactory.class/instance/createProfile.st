@@ -2,7 +2,7 @@ instance creation
 createProfile
 	| profile classMetaclass clock clockPair |
 	profile := OPUMLProfile new
-		name: 'Clock v0.1';
+		name: 'Clock';
 		uuid: '_0';
 		URI: 'http://www.example.com/Clock/0.1';
 		implementationPackage: 'ClockProfile';

@@ -11,9 +11,9 @@ exampleModel
 				appliedProfile: profile).
 	issueTag := profile ownedStereotype detect: [ :each | each name = 'IssueTag' ].
 	classA := self classA.
-	classA applyStereotype: issueTag implementationClass asClass new.
+	classA applyStereotype: issueTag implementationClass new.
 	classB := self classB.
-	classB applyStereotype: issueTag implementationClass asClass new.
+	classB applyStereotype: issueTag implementationClass new.
 	model packagedElements
 		add: classA;
 		add: classB.

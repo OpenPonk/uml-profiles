@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "OPUMLElement",
 	"category" : "OP-IssuesProfile-Metamodel",
 	"classinstvars" : [ ],
 	"pools" : [ ],

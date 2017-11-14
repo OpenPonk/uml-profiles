@@ -12,7 +12,7 @@ modelWithAppliedStereotype
 	class := OPUMLClass new name: 'StopWatch'.
 	class
 		applyStereotype:
-			(profile packagedElements detect: [ :each | each name = 'Clock' ]) implementationClass
-				asClass new.
+			(profile packagedElements detect: [ :each | each name = 'Clock' ])
+				implementationClass new.
 	model packagedElements add: class.
 	^ model

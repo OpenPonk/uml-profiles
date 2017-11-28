@@ -4,7 +4,8 @@ newStereotype: aName to: aBaseClass optional: isOptional
 	baseName := aBaseClass name.
 	stereotype := OPUMLStereotype new name: aName.
 	stereotype uuid: stereotype name.
-	extension := OPUMLExtension new." name: baseName , '_' , aName".
+	extension := OPUMLExtension new.
+	extension name: baseName , '_' , aName.
 	extension uuid: extension name.
 	(baseProperty := OPUMLProperty new)
 		name: 'base_' , baseName;

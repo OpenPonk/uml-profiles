@@ -1,7 +1,7 @@
 Class {
 	#name : #IPIssuesProfileFactory,
 	#superclass : #OPUmlCustomProfile,
-	#category : 'OP-IssuesProfile-Model'
+	#category : #'OP-IssuesProfile-Model'
 }
 
 { #category : #actions }
@@ -98,11 +98,11 @@ IPIssuesProfileFactory >> exampleModel [
 { #category : #actions }
 IPIssuesProfileFactory >> openExample [
 	<script: 'self new openExample'>
-	OPUmlProject openOnModel: self exampleModel
+	OPProject openOnModel: self exampleModel
 ]
 
 { #category : #actions }
 IPIssuesProfileFactory >> openProfile [
 	<script: 'self new openProfile'>
-	OPUmlProject openOnModel: self class profile
+	OPProject openOnModel: self class profile
 ]

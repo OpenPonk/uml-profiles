@@ -14,7 +14,7 @@ BaselineOfUMLProfiles >> baseline: spec [
 		for: #common
 		do: [ spec
 				baseline: 'UMLMetamodel'
-				with: [ spec repository: 'github://openponk/uml-metamodel:v2.1.x/repository' ].
+				with: [ spec repository: 'github://openponk/uml-metamodel:v3.0.x/repository' ].
 			spec package: 'OP-UML-Profiles' with: [ spec requires: #('UMLMetamodel') ].
 			spec package: 'OP-ClockProfile' with: [ spec requires: #('OP-UML-Profiles') ].
 			spec package: 'OP-IssuesProfile' with: [ spec requires: #('OP-UML-Profiles') ].

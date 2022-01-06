@@ -82,7 +82,7 @@ IPIssuesProfileFactory >> exampleModel [
 	model profileApplications
 		add:
 			(OPUMLProfileApplication new
-				uuid: model uuid , '-_profileApplication.0';
+				uuid: model uuid;
 				appliedProfile: profile).
 	issueTag := profile ownedStereotype detect: [ :each | each name = 'IssueTag' ].
 	classA := self classA.

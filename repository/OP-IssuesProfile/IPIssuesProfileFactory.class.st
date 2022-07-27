@@ -75,16 +75,15 @@ IPIssuesProfileFactory >> createProfile [
 
 { #category : #actions }
 IPIssuesProfileFactory >> exampleModel [
+
 	<gtExample>
 	| model classA classB issueTag profile |
 	model := OPUmlExamples new emptyModel.
 	profile := self class profile.
-	model profileApplications
-		add:
-			(OPUMLProfileApplication new
-				uuid: model uuid;
-				appliedProfile: profile).
-	issueTag := profile ownedStereotype detect: [ :each | each name = 'IssueTag' ].
+	model profileApplications add:
+		(OPUMLProfileApplication new appliedProfile: profile).
+	issueTag := profile ownedStereotype detect: [ :each | 
+		            each name = 'IssueTag' ].
 	classA := self classA.
 	classA applyStereotype: issueTag implementationClass new.
 	classB := self classB.

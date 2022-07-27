@@ -38,20 +38,17 @@ ClClockProfileFactory >> createProfile [
 
 { #category : #'instance creation' }
 ClClockProfileFactory >> modelWithAppliedStereotype [
+
 	<gtExample>
 	| model class profile |
 	model := OPUmlExamples new emptyModel.
 	profile := self class profile.
-	model profileApplications
-		add:
-			(OPUMLProfileApplication new
-				uuid: model uuid , '-_profileApplication.0';
-				appliedProfile: profile).
+	model profileApplications add:
+		(OPUMLProfileApplication new appliedProfile: profile).
 	class := OPUMLClass new name: 'StopWatch'.
-	class
-		applyStereotype:
-			(profile packagedElements detect: [ :each | each name = 'Clock' ])
-				implementationClass new.
+	class applyStereotype:
+		(profile packagedElements detect: [ :each | each name = 'Clock' ])
+			implementationClass new.
 	model packagedElements add: class.
 	^ model
 ]

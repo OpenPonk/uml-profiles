@@ -55,14 +55,18 @@ ClClockProfileFactory >> modelWithAppliedStereotype [
 
 { #category : #'instance creation' }
 ClClockProfileFactory >> openExample [
+
 	<script: 'self new openExample'>
-	OPProject openOnModel: self modelWithAppliedStereotype
+	(OPProject openOnModel: self modelWithAppliedStereotype)
+		showAllElementsInAllDiagrams
 ]
 
 { #category : #'instance creation' }
 ClClockProfileFactory >> openProfile [
+
 	<script: 'self new openProfile'>
-	OPProject openOnModel: self class profile
+	(OPProject openOnModel: self class profile)
+		showAllElementsInAllDiagrams
 ]
 
 { #category : #'instance creation' }

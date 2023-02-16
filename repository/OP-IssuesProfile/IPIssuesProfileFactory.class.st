@@ -96,12 +96,16 @@ IPIssuesProfileFactory >> exampleModel [
 
 { #category : #actions }
 IPIssuesProfileFactory >> openExample [
+
 	<script: 'self new openExample'>
-	OPProject openOnModel: self exampleModel
+	(OPProject openOnModel: self exampleModel)
+		showAllElementsInAllDiagrams
 ]
 
 { #category : #actions }
 IPIssuesProfileFactory >> openProfile [
+
 	<script: 'self new openProfile'>
-	OPProject openOnModel: self class profile
+	(OPProject openOnModel: self class profile)
+		showAllElementsInAllDiagrams
 ]

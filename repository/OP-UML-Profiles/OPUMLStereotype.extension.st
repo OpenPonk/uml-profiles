@@ -8,7 +8,9 @@ OPUMLStereotype >> implementationClass [
 
 { #category : '*OP-UML-Profiles' }
 OPUMLStereotype >> implementationClassName [
+
 	^ self tags
-		at: #implementationClassName
-		ifAbsent: [ self profile implementationPrefix , self name ]
+		  at: #implementationClassName
+		  ifAbsent: [
+		  (self profile implementationPrefix , self name) asSymbol ]
 ]

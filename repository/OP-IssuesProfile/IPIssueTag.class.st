@@ -1,19 +1,21 @@
 Class {
-	#name : #IPIssueTag,
-	#superclass : #OPUMLElement,
+	#name : 'IPIssueTag',
+	#superclass : 'OPUMLElement',
 	#instVars : [
 		'base_Element',
 		'reviewed'
 	],
-	#category : 'OP-IssuesProfile-Metamodel'
+	#category : 'OP-IssuesProfile-Metamodel',
+	#package : 'OP-IssuesProfile',
+	#tag : 'Metamodel'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IPIssueTag >> base_Element [
 	^ base_Element
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IPIssueTag >> base_Element: anElement [
 	| oldElement |
 	oldElement := base_Element.
@@ -26,22 +28,22 @@ IPIssueTag >> base_Element: anElement [
 		to: anElement
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IPIssueTag >> reviewed [
 	^ reviewed ifNil: [ false ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IPIssueTag >> reviewed: aBoolean [
 	reviewed := aBoolean
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IPIssueTag >> umlClassName [
 	^ 'IssueTag'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 IPIssueTag >> umlMetaClass [
 	^ IPIssuesProfileFactory metaClassFor: self
 ]

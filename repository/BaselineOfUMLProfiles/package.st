@@ -1,1 +1,1 @@
-Package { #name : #BaselineOfUMLProfiles }
+Package { #name : 'BaselineOfUMLProfiles' }

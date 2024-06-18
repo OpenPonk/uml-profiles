@@ -1,10 +1,12 @@
 Class {
-	#name : #IPIssuesProfileFactory,
-	#superclass : #OPUmlCustomProfile,
-	#category : #'OP-IssuesProfile-Model'
+	#name : 'IPIssuesProfileFactory',
+	#superclass : 'OPUmlCustomProfile',
+	#category : 'OP-IssuesProfile-Model',
+	#package : 'OP-IssuesProfile',
+	#tag : 'Model'
 }
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> classA [
 	<gtExample>
 	| classA |
@@ -22,7 +24,7 @@ IPIssuesProfileFactory >> classA [
 	^ classA
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> classB [
 	<gtExample>
 	| classB |
@@ -41,7 +43,7 @@ IPIssuesProfileFactory >> classB [
 	^ classB
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> createProfile [
 	| profile elementMetaclass associationMetaclass issueTag importedPackage packageImport |
 	profile := OPUMLProfile new
@@ -73,7 +75,7 @@ IPIssuesProfileFactory >> createProfile [
 	^ profile
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> exampleModel [
 
 	<gtExample>
@@ -94,7 +96,7 @@ IPIssuesProfileFactory >> exampleModel [
 	^ model
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> openExample [
 
 	<script: 'self new openExample'>
@@ -102,7 +104,7 @@ IPIssuesProfileFactory >> openExample [
 		showAllElementsInAllDiagrams
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> openProfile [
 
 	<script: 'self new openProfile'>

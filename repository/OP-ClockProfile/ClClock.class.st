@@ -1,20 +1,22 @@
 Class {
-	#name : #ClClock,
-	#superclass : #Object,
+	#name : 'ClClock',
+	#superclass : 'Object',
 	#instVars : [
 		'osVersion',
 		'posixCompliant',
 		'base_Class'
 	],
-	#category : 'OP-ClockProfile-Metamodel'
+	#category : 'OP-ClockProfile-Metamodel',
+	#package : 'OP-ClockProfile',
+	#tag : 'Metamodel'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ClClock >> base_Class [
 	^ base_Class
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ClClock >> base_Class: aClass [
 	| oldClass |
 	oldClass := base_Class.
@@ -27,32 +29,32 @@ ClClock >> base_Class: aClass [
 		to: aClass
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ClClock >> osVersion [
 	^ osVersion
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ClClock >> osVersion: aString [
 	osVersion := aString
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ClClock >> posixCompliant [
 	^ posixCompliant ifNil: [ false ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ClClock >> posixCompliant: aBoolean [
 	posixCompliant := aBoolean
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ClClock >> umlClassName [
 	^ 'Clock'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 ClClock >> umlMetaClass [
 	^ ClClockProfileFactory metaClassFor: self
 ]

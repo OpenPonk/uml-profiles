@@ -1,10 +1,12 @@
 Class {
-	#name : #ClClockProfileFactory,
-	#superclass : #OPUmlCustomProfile,
-	#category : #'OP-ClockProfile-Model'
+	#name : 'ClClockProfileFactory',
+	#superclass : 'OPUmlCustomProfile',
+	#category : 'OP-ClockProfile-Model',
+	#package : 'OP-ClockProfile',
+	#tag : 'Model'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> createProfile [
 	| profile classMetaclass clock clockPair |
 	profile := OPUMLProfile new
@@ -36,7 +38,7 @@ ClClockProfileFactory >> createProfile [
 	^ profile
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> modelWithAppliedStereotype [
 
 	<gtExample>
@@ -53,7 +55,7 @@ ClClockProfileFactory >> modelWithAppliedStereotype [
 	^ model
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> openExample [
 
 	<script: 'self new openExample'>
@@ -61,7 +63,7 @@ ClClockProfileFactory >> openExample [
 		showAllElementsInAllDiagrams
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> openProfile [
 
 	<script: 'self new openProfile'>
@@ -69,7 +71,7 @@ ClClockProfileFactory >> openProfile [
 		showAllElementsInAllDiagrams
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> reset [
 	<script: 'self reset'>
 	self class reset

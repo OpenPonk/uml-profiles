@@ -2,12 +2,13 @@
 Baseline for https://github.com/OpenPonk/uml-profiles
 "
 Class {
-	#name : #BaselineOfUMLProfiles,
-	#superclass : #BaselineOf,
-	#category : 'BaselineOfUMLProfiles'
+	#name : 'BaselineOfUMLProfiles',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfUMLProfiles',
+	#package : 'BaselineOfUMLProfiles'
 }
 
-{ #category : #baselines }
+{ #category : 'baselines' }
 BaselineOfUMLProfiles >> baseline: spec [
 	<baseline>
 	spec

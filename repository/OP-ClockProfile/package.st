@@ -1,1 +1,1 @@
-Package { #name : #'OP-ClockProfile' }
+Package { #name : 'OP-ClockProfile' }

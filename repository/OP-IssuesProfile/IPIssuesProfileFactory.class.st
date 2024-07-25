@@ -80,7 +80,7 @@ IPIssuesProfileFactory >> exampleModel [
 
 	<gtExample>
 	| model classA classB issueTag profile |
-	model := OPUmlExamples new emptyModel.
+	model := OPUmlExamples emptyModel.
 	profile := self class profile.
 	model profileApplications add:
 		(OPUMLProfileApplication new appliedProfile: profile).

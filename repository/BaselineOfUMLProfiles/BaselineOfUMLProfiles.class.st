@@ -2,19 +2,20 @@
 Baseline for https://github.com/OpenPonk/uml-profiles
 "
 Class {
-	#name : #BaselineOfUMLProfiles,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfUMLProfiles
+	#name : 'BaselineOfUMLProfiles',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfUMLProfiles',
+	#package : 'BaselineOfUMLProfiles'
 }
 
-{ #category : #baselines }
+{ #category : 'baselines' }
 BaselineOfUMLProfiles >> baseline: spec [
 	<baseline>
 	spec
 		for: #common
 		do: [ spec
 				baseline: 'UMLMetamodel'
-				with: [ spec repository: 'github://openponk/uml-metamodel:v3.0.x/repository' ].
+				with: [ spec repository: 'github://openponk/uml-metamodel:v4.0.x' ].
 			spec package: 'OP-UML-Profiles' with: [ spec requires: #('UMLMetamodel') ].
 			spec package: 'OP-ClockProfile' with: [ spec requires: #('OP-UML-Profiles') ].
 			spec package: 'OP-IssuesProfile' with: [ spec requires: #('OP-UML-Profiles') ].

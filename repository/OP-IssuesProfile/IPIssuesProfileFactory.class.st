@@ -1,10 +1,12 @@
 Class {
-	#name : #IPIssuesProfileFactory,
-	#superclass : #OPUmlCustomProfile,
-	#category : #'OP-IssuesProfile-Model'
+	#name : 'IPIssuesProfileFactory',
+	#superclass : 'OPUmlCustomProfile',
+	#category : 'OP-IssuesProfile-Model',
+	#package : 'OP-IssuesProfile',
+	#tag : 'Model'
 }
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> classA [
 	<gtExample>
 	| classA |
@@ -22,7 +24,7 @@ IPIssuesProfileFactory >> classA [
 	^ classA
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> classB [
 	<gtExample>
 	| classB |
@@ -41,7 +43,7 @@ IPIssuesProfileFactory >> classB [
 	^ classB
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> createProfile [
 	| profile elementMetaclass associationMetaclass issueTag importedPackage packageImport |
 	profile := OPUMLProfile new
@@ -73,18 +75,17 @@ IPIssuesProfileFactory >> createProfile [
 	^ profile
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> exampleModel [
+
 	<gtExample>
 	| model classA classB issueTag profile |
-	model := OPUmlExamples new emptyModel.
+	model := OPUmlExamples emptyModel.
 	profile := self class profile.
-	model profileApplications
-		add:
-			(OPUMLProfileApplication new
-				uuid: model uuid , '-_profileApplication.0';
-				appliedProfile: profile).
-	issueTag := profile ownedStereotype detect: [ :each | each name = 'IssueTag' ].
+	model profileApplications add:
+		(OPUMLProfileApplication new appliedProfile: profile).
+	issueTag := profile ownedStereotype detect: [ :each | 
+		            each name = 'IssueTag' ].
 	classA := self classA.
 	classA applyStereotype: issueTag implementationClass new.
 	classB := self classB.
@@ -95,14 +96,18 @@ IPIssuesProfileFactory >> exampleModel [
 	^ model
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> openExample [
+
 	<script: 'self new openExample'>
-	OPProject openOnModel: self exampleModel
+	(OPProject openOnModel: self exampleModel)
+		showAllElementsInAllDiagrams
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 IPIssuesProfileFactory >> openProfile [
+
 	<script: 'self new openProfile'>
-	OPProject openOnModel: self class profile
+	(OPProject openOnModel: self class profile)
+		showAllElementsInAllDiagrams
 ]

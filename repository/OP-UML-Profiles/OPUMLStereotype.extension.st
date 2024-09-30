@@ -1,13 +1,16 @@
-Extension { #name : #OPUMLStereotype }
+Extension { #name : 'OPUMLStereotype' }
 
-{ #category : #'*OP-UML-Profiles' }
+{ #category : '*OP-UML-Profiles' }
 OPUMLStereotype >> implementationClass [
-	^ self implementationClassName asClass
+
+	^ Smalltalk at: self implementationClassName
 ]
 
-{ #category : #'*OP-UML-Profiles' }
+{ #category : '*OP-UML-Profiles' }
 OPUMLStereotype >> implementationClassName [
+
 	^ self tags
-		at: #implementationClassName
-		ifAbsent: [ self profile implementationPrefix , self name ]
+		  at: #implementationClassName
+		  ifAbsent: [
+		  (self profile implementationPrefix , self name) asSymbol ]
 ]

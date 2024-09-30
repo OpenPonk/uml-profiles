@@ -1,11 +1,11 @@
-Extension { #name : #OPUMLElement }
+Extension { #name : 'OPUMLElement' }
 
-{ #category : #'*OP-IssuesProfile' }
+{ #category : '*OP-IssuesProfile' }
 OPUMLElement >> extension_IssueTag [
 	^ self tagAt: #extension_IssueTag ifAbsent: [ nil ]
 ]
 
-{ #category : #'*OP-IssuesProfile' }
+{ #category : '*OP-IssuesProfile' }
 OPUMLElement >> extension_IssueTag: anIssueTag [
 	| oldIssueTag |
 	oldIssueTag := self extension_IssueTag.

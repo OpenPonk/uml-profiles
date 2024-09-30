@@ -1,1 +1,1 @@
-Package { #name : #'OP-IssuesProfile' }
+Package { #name : 'OP-IssuesProfile' }

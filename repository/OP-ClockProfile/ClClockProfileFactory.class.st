@@ -1,10 +1,12 @@
 Class {
-	#name : #ClClockProfileFactory,
-	#superclass : #OPUmlCustomProfile,
-	#category : #'OP-ClockProfile-Model'
+	#name : 'ClClockProfileFactory',
+	#superclass : 'OPUmlCustomProfile',
+	#category : 'OP-ClockProfile-Model',
+	#package : 'OP-ClockProfile',
+	#tag : 'Model'
 }
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> createProfile [
 	| profile classMetaclass clock clockPair |
 	profile := OPUMLProfile new
@@ -36,39 +38,40 @@ ClClockProfileFactory >> createProfile [
 	^ profile
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> modelWithAppliedStereotype [
+
 	<gtExample>
 	| model class profile |
-	model := OPUmlExamples new emptyModel.
+	model := OPUmlExamples emptyModel.
 	profile := self class profile.
-	model profileApplications
-		add:
-			(OPUMLProfileApplication new
-				uuid: model uuid , '-_profileApplication.0';
-				appliedProfile: profile).
+	model profileApplications add:
+		(OPUMLProfileApplication new appliedProfile: profile).
 	class := OPUMLClass new name: 'StopWatch'.
-	class
-		applyStereotype:
-			(profile packagedElements detect: [ :each | each name = 'Clock' ])
-				implementationClass new.
+	class applyStereotype:
+		(profile packagedElements detect: [ :each | each name = 'Clock' ])
+			implementationClass new.
 	model packagedElements add: class.
 	^ model
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> openExample [
+
 	<script: 'self new openExample'>
-	OPProject openOnModel: self modelWithAppliedStereotype
+	(OPProject openOnModel: self modelWithAppliedStereotype)
+		showAllElementsInAllDiagrams
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> openProfile [
+
 	<script: 'self new openProfile'>
-	OPProject openOnModel: self class profile
+	(OPProject openOnModel: self class profile)
+		showAllElementsInAllDiagrams
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 ClClockProfileFactory >> reset [
 	<script: 'self reset'>
 	self class reset

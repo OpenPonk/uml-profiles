@@ -1,6 +1,6 @@
 Class {
-	#name : #OPUmlCustomProfile,
-	#superclass : #Object,
+	#name : 'OPUmlCustomProfile',
+	#superclass : 'Object',
 	#instVars : [
 		'metaClasses'
 	],
@@ -8,10 +8,11 @@ Class {
 		'profile',
 		'metaClassMap'
 	],
-	#category : 'OP-UML-Profiles'
+	#category : 'OP-UML-Profiles',
+	#package : 'OP-UML-Profiles'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPUmlCustomProfile class >> metaClassFor: anElement [
 	"
 	metaClassMap := nil
@@ -23,41 +24,41 @@ OPUmlCustomProfile class >> metaClassFor: anElement [
 	^ metaClassMap at: anElement umlClassName
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPUmlCustomProfile class >> profile [
 	<script: 'self profile inspect'>
 	^ profile ifNil: [ profile := self new createProfile ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 OPUmlCustomProfile class >> reset [
 	<script>
 	profile := nil.
 	metaClassMap := nil
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPUmlCustomProfile >> createProfile [
 	^ self subclassResponsibility
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPUmlCustomProfile >> initialize [
 	super initialize.
 	metaClasses := Dictionary new
 ]
 
-{ #category : #actions }
+{ #category : 'actions' }
 OPUmlCustomProfile >> metaClassNamed: aClassName [
 	^ OPUMLXMISpecsStorage metaClassNamed: aClassName
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPUmlCustomProfile >> newStereotype: aName to: aBaseClass [
 	^ self newStereotype: aName to: aBaseClass optional: true
 ]
 
-{ #category : #'instance creation' }
+{ #category : 'instance creation' }
 OPUmlCustomProfile >> newStereotype: aName to: aBaseClass optional: isOptional [
 	| stereotype baseName extension baseProperty extensionProperty |
 	baseName := aBaseClass name.

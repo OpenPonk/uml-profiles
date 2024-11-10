@@ -1,12 +1,12 @@
 Extension { #name : 'OPUMLStereotype' }
 
-{ #category : '*OP-UML-Profiles' }
+{ #category : '*OpenPonk-UML-Profiles' }
 OPUMLStereotype >> implementationClass [
 
 	^ Smalltalk at: self implementationClassName
 ]
 
-{ #category : '*OP-UML-Profiles' }
+{ #category : '*OpenPonk-UML-Profiles' }
 OPUMLStereotype >> implementationClassName [
 
 	^ self tags

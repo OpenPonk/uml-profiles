@@ -8,8 +8,8 @@ Class {
 		'profile',
 		'metaClassMap'
 	],
-	#category : 'OP-UML-Profiles',
-	#package : 'OP-UML-Profiles'
+	#category : 'OpenPonk-UML-Profiles',
+	#package : 'OpenPonk-UML-Profiles'
 }
 
 { #category : 'accessing' }

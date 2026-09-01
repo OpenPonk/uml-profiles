@@ -1,3 +1,6 @@
+"
+I am a factory and builder for the OpenPonk Clock UML profile. I define the profile, construct stereotypes like 'Clock', and provide example models demonstrating how to apply these stereotypes to UML Classes.
+"
 Class {
 	#name : 'ClClockProfileFactory',
 	#superclass : 'OPUmlCustomProfile',
@@ -6,7 +9,7 @@ Class {
 	#tag : 'Model'
 }
 
-{ #category : 'instance creation' }
+{ #category : 'actions' }
 ClClockProfileFactory >> createProfile [
 	| profile classMetaclass clock clockPair |
 	profile := OPUMLProfile new
@@ -73,6 +76,7 @@ ClClockProfileFactory >> openProfile [
 
 { #category : 'instance creation' }
 ClClockProfileFactory >> reset [
+
 	<script: 'self reset'>
 	self class reset
 ]

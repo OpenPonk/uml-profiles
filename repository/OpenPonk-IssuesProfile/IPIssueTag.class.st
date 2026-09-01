@@ -1,3 +1,6 @@
+"
+I represent the 'IssueTag' stereotype applied to a UML Element. I track whether the associated model element has been reviewed by maintaining a `reviewed` boolean property alongside the `base_Element` reference.
+"
 Class {
 	#name : 'IPIssueTag',
 	#superclass : 'OPUMLElement',

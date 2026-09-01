@@ -1,3 +1,6 @@
+"
+I am a factory and builder for the OpenPonk Issues UML profile. I dynamically construct the profile, define its stereotypes (such as IssueTag), and provide example models demonstrating their application.
+"
 Class {
 	#name : 'IPIssuesProfileFactory',
 	#superclass : 'OPUmlCustomProfile',

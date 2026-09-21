@@ -9,6 +9,14 @@ Class {
 	#tag : 'Model'
 }
 
+{ #category : 'class initialization' }
+IPIssuesProfileFactory class >> reset [
+
+	<script>
+	profile := nil.
+	metaClassMap := nil
+]
+
 { #category : 'actions' }
 IPIssuesProfileFactory >> classA [
 	<gtExample>

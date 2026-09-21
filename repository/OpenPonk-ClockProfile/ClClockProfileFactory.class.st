@@ -9,6 +9,14 @@ Class {
 	#tag : 'Model'
 }
 
+{ #category : 'class initialization' }
+ClClockProfileFactory class >> reset [
+
+	<script>
+	profile := nil.
+	metaClassMap := nil
+]
+
 { #category : 'actions' }
 ClClockProfileFactory >> createProfile [
 	| profile classMetaclass clock clockPair |

@@ -1,3 +1,6 @@
+"
+I represent the 'Clock' stereotype applied to a UML Class. I extend the base model class with system environment properties such as `osVersion` and `posixCompliant`.
+"
 Class {
 	#name : 'ClClock',
 	#superclass : 'Object',

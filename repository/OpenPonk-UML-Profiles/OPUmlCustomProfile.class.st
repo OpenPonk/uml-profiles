@@ -1,3 +1,6 @@
+"
+I am a builder and manager for custom UML profiles. I provide an API to dynamically construct UML profiles, define new stereotypes, and establish extensions mapping those stereotypes to specific UML metaclasses.
+"
 Class {
 	#name : 'OPUmlCustomProfile',
 	#superclass : 'Object',
@@ -8,8 +11,9 @@ Class {
 		'profile',
 		'metaClassMap'
 	],
-	#category : 'OpenPonk-UML-Profiles',
-	#package : 'OpenPonk-UML-Profiles'
+	#category : 'OpenPonk-UML-Profiles-Profile',
+	#package : 'OpenPonk-UML-Profiles',
+	#tag : 'Profile'
 }
 
 { #category : 'accessing' }
@@ -30,8 +34,9 @@ OPUmlCustomProfile class >> profile [
 	^ profile ifNil: [ profile := self new createProfile ]
 ]
 
-{ #category : 'accessing' }
+{ #category : 'class initialization' }
 OPUmlCustomProfile class >> reset [
+
 	<script>
 	profile := nil.
 	metaClassMap := nil
@@ -42,7 +47,7 @@ OPUmlCustomProfile >> createProfile [
 	^ self subclassResponsibility
 ]
 
-{ #category : 'actions' }
+{ #category : 'initialization' }
 OPUmlCustomProfile >> initialize [
 	super initialize.
 	metaClasses := Dictionary new

@@ -1,18 +1,1 @@
-SmalltalkCISpec {
-	#loading : [
-		SCIMetacelloLoadSpec {
-			#baseline : 'OpenPonkUMLProfiles',
-			#directory : 'repository',
-			#platforms : [ #pharo ]
-		}
-	],
-	#testing : {
-		#packages : [ 'OpenPonk*' ],
-		#coverage : {
-			#packages : [
-				'OpenPonk-UML-Profiles*'
-			]
-		},
-		#failOnZeroTests : false
-	}
-}
+SmalltalkCISpec {	#loading : [		SCIMetacelloLoadSpec {			#baseline : 'OpenPonkUMLProfiles',			#directory : 'repository',			#platforms : [ #pharo ]		}	],	#testing : {		#packages : [ 'OpenPonk*' ],		#coverage : {			#packages : [				'OpenPonk-UML-Profiles*',				'OpenPonk-ClockProfile*',				'OpenPonk-IssuesProfile*'			]		},		#failOnZeroTests : false	}}

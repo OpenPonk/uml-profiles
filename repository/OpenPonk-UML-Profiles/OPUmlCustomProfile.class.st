@@ -17,6 +17,16 @@ Class {
 }
 
 { #category : 'accessing' }
+OPUmlCustomProfile class >> legacyURIs [
+	^ #()
+]
+
+{ #category : 'testing' }
+OPUmlCustomProfile class >> matchesURI: aUriString [
+	^ self profile URI = aUriString or: [ self legacyURIs includes: aUriString ]
+]
+
+{ #category : 'accessing' }
 OPUmlCustomProfile class >> metaClassFor: anElement [
 	"
 	metaClassMap := nil

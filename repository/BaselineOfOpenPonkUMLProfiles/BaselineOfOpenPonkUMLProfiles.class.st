@@ -15,7 +15,7 @@ BaselineOfOpenPonkUMLProfiles >> baseline: spec [
 		for: #common
 		do: [ spec
 				baseline: 'OpenPonkUMLMetamodel'
-				with: [ spec repository: 'github://OpenPonk/uml-metamodel:v5.1.0' ].
+				with: [ spec repository: 'github://OpenPonk/uml-metamodel:v5.1.1' ].
 			spec package: 'OpenPonk-UML-Profiles' with: [ spec requires: #('OpenPonkUMLMetamodel') ].
 			spec package: 'OpenPonk-ClockProfile' with: [ spec requires: #('OpenPonk-UML-Profiles') ].
 			spec package: 'OpenPonk-IssuesProfile' with: [ spec requires: #('OpenPonk-UML-Profiles') ].
